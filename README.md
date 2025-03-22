@@ -2,7 +2,7 @@
 
 ## 🔥 Overview
 
-This project explores **laptop pricing analysis** using Python, where I applied various **data analysis and machine learning techniques** to understand the factors influencing laptop prices. The dataset underwent rigorous **Exploratory Data Analysis (EDA), data wrangling, model development, evaluation, and refinement** to derive meaningful insights and predictions.
+This project explores **laptop pricing analysis** using Python, where I applied various **data analysis and machine learning techniques** to understand the factors influencing laptop prices. The dataset underwent rigorous **Importing data set, Exploratory Data Analysis (EDA), data wrangling, model development, evaluation, and refinement** to derive meaningful insights and predictions.
 
 ## 📂 Project Structure
 
