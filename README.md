@@ -1,4 +1,4 @@
-# 📊 Laptop Pricing Analysis using Python
+# 📊 Laptop Price Predictor with ML
 
 ## 🔥 Overview
 
