@@ -6,15 +6,46 @@
 
 This is a regression-based machine learning project where the primary objective is to predict the price of a laptop based on its specifications. The dataset consists of multiple rows and columns, with each row representing a laptop and each column representing a specific feature such as manufacturer, GPU, RAM, CPU, etc. The target column is ‘price’, which we aim to predict using the remaining features.
 
-## Key Insights
+## Key Insights & Conclusion
 
-The Laptop Prices dataset used in this project contains 238 entries, each representing a unique laptop with 12 features. During the exploratory data analysis phase, it was observed that certain features significantly influence the price of a laptop. Among them, RAM size (in GB), CPU frequency, CPU core, and the weight of the laptop had the most notable impact. In general, **laptops with higher RAM, faster CPUs (e.g., frequencies of 2.5 GHz or more), and lighter weight tend to be priced higher.** Additionally, the distribution of prices was found to be right-skewed, meaning that most laptops are in the affordable price range, while a smaller number fall into the high-end category.
 
-To predict the price of a laptop, several regression models were applied and evaluated based on **R² score, Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE).** Among the models tested, Ridge Regression, Linear Regression, and Lasso Regression performed the best, achieving high R² scores and low error values. These models demonstrated good predictive performance and generalization on the test data. Given the relatively small size of the dataset, hyperparameter tuning methods like GridSearchCV were intentionally avoided. Applying such techniques on limited data may lead to overfitting or underfitting, as the model could make incorrect assumptions due to insufficient variability in the dataset.
+* The dataset consists of **238 entries** and **12 features**, with each entry representing a unique laptop.
 
-After comparing all models, **Ridge Regression** emerged as the most accurate and stable, making it the final choice for this project. It provides a reliable way to predict laptop prices based on key specifications without overfitting the data. With this model, new laptops' prices can be estimated effectively, helping consumers, retailers, or manufacturers understand pricing trends and make informed decisions. This concludes the project with a well-performing regression model that can be further refined or scaled if more data becomes available.
+* During exploratory data analysis (EDA), the following features were found to significantly influence laptop prices:
 
-Below is the results table of all 10 models performed.
+  * `RAM_GB` (RAM size)
+  * `CPU_Frequency`
+  * `CPU_Core`
+  * `Weight_kg`
+
+* **General trend** observed:
+
+  * Laptops with **higher RAM**, **faster CPUs (≥2.5 GHz)**, and **lighter weight** tend to have **higher prices**.
+  * The price distribution is **right-skewed**, indicating more affordable laptops and fewer high-end ones.
+
+* **Regression models** applied to predict laptop prices:
+
+  * Evaluated using **R² Score**, **Mean Absolute Error (MAE)**, and **Root Mean Squared Error (RMSE)**.
+  * Top-performing models:
+
+    * **Ridge Regression**
+    * **Linear Regression**
+    * **Lasso Regression**
+
+* **Why no hyperparameter tuning?**
+
+  * Dataset is relatively small.
+  * Techniques like **GridSearchCV** were avoided to prevent **overfitting** or **underfitting** due to limited data.
+
+* **Final model chosen**:
+
+  * **Ridge Regression** showed the **best balance** of performance and generalization.
+  * It can reliably predict laptop prices based on key specifications.
+
+* This model provides a foundation that can be **further improved** if larger or more diverse datasets become available.
+
+
+Below is the **results table of all 10 models performed.**
 
 ![image](https://github.com/user-attachments/assets/b3251ca7-947f-44f5-9666-5f4552604a1f)
 
